@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+ 
+    <link rel="stylesheet" type = "text/css" href="css/admin.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+           
+                    <button style="pointer-events: none;">
+                        <img src="images/svg/logo.svg" alt="" style="filter: brightness(0) invert(); width: 55px; padding-left: 7px;">
+                        <span class="title"><h2>Tuti Motors</h2></span>
+                    </button>
+               
+                    <button data-tab-target=".tab1" class= "active tabs__button">
+                        <span class="icon"><i class="fa fa-car" aria-hidden="true"></i></span>
+                        <span class="title">Cars</span>
+                    </button>
+                
+                    <button data-tab-target=".tab2" class="tabs__button">
+                        <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                        <span class="title">Users</span>
+                    </button>
+                
+                    <button data-tab-target=".tab3" class="tabs__button">
+                        <span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <span class="title">Add</span>
+                    </button>
+        
+                    <button class="tabs__button">
+                        <span class="icon">
+                            <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+
+                        </span>
+                        <span class="title"> <a href="Admin-login.html">Sign Out</a></span>
+                    </button>
+                
+        </div>
+        <div class="main">
+            <div class="top-bar">
+                <div class="toggle" onclick="toggleMenu();">
+                    <span> <i class="fa fa-bars" aria-hidden="true"></i> </span>
+                </div>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="tab-content">
+                <div class = 'active tab1' data-tab-content>
+                    <h3>Cars Listed</h3>
+                        <div class="cars__table">
+                            <table class="content-table">
+                                <thead>
+                                  <tr>
+                                    <th>Model</th>
+                                    <th>Make</th>
+                                    <th>Type</th>
+                                    <th>Year</th>
+                                    <th>Engine</th>
+                                    <th>Milage</th>
+                                    <th>Fuel</th>
+                                    <th>Transmission</th>
+                                    <th>Price</th>
+                                    <th>Photos</th>
+                                    <th></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt=""></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/alan-flack-VtfiPvSGh5s-unsplash.jpg" alt=""></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td>
+                                      <img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Toyota</td>
+                                    <td>Hilux</td>
+                                    <td>Pickup</td>
+                                    <td>2014</td>
+                                    <td>2500 CC</td>
+                                    <td></td>
+                                    <td>Diesel</td>
+                                    <td>Manual</td>
+                                    <td>KSH 2,850,000.00</td>
+                                    <td><img src="images/jose-carbajal-8xyki0bqvgw-unsplash.jpg" alt=""></td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="form__section edit-form">
+                          <form action="">
+                            <h2>Edit the car details</h2>
+                            <div class="form ">
+                                <label for="model" class="label-name">
+                                    Model
+                                </label>  
+                                <input type="text" name="model" placeholder=" " id="model"/> 
+                            </div>
+                            <div class="form">
+                                <label for="make" class="label-name">
+                                    Make
+                                </label>  
+                                <input type="text" name="make" placeholder=" " id="make"/> 
+                            </div>
+                            <div class="form">
+                                <label for="type" class="label-name">
+                                    Type
+                                </label> 
+                                <input type="text" name="type" placeholder=" " id="type"/>  
+                            </div>
+                            <div class="form">
+                                <label for="year" class="label-name">
+                                    Year
+                                </label> 
+                                <input type="text" name="year" placeholder=" "  id="year"/>  
+                            </div>
+                            <div class="form">
+                                <label for="engine" class="label-name">
+                                   Engine
+                                </label>   
+                                <input type="text" name="engine" placeholder=" " id="engine"/>
+                            </div>
+                            <div class="form">
+                                <label for="milage" class="label-name">
+                                   Milage
+                                </label> 
+                                <input type="text" name="milage" placeholder=" " id="milage"/>  
+                            </div>
+                            <div class="form">
+                                <label for="fuel" class="label-name">
+                                    Fuel
+                                </label>   
+                                <input type="text" name="fuel" placeholder=" "  id="fuel"/>
+                            </div>
+                            <div class="form">
+                                <label for="transmission" class="label-name">
+                                   Transmission
+                                </label> 
+                                <input type="text" name="transmission" placeholder=" " id="transmission"/>  
+                            </div>
+                            <div class="form">
+                                <label for="price" class="label-name">
+                                    Price
+                                </label>  
+                                <input type="text" name="price" placeholder=" " id="price"/> 
+                            </div>
+                            <button type="submit" id="add">Save Changes</button>
+                          </form>
+                           
+                        </div>
+                </div>
+                <div class = 'tab2' data-tab-content>
+                    <h2>Users</h2>
+                    <table class="content-table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Email Address</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          <tr>
+                            <td>Severus Snape</td>
+                            <td>Slytherin@gmail.com</td>
+                            <td><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+                <div class = 'tab3' data-tab-content>
+                    <h2>Add new car</h2>
+                    <p>Fill in the fields</p>
+                    <div class="form__section">
+                      <form action="">
+                        <div class="form">
+                          <label for="model" class="label-name">
+                           Model
+                          </label> 
+                          <input type="text" name="model" placeholder=" "/>
+                              
+                        </div>
+                        <div class="form">
+                            
+                            <label for="make" class="label-name">
+                                Make
+                            </label>   
+                            <input type="text" name="make" placeholder=" "/>
+                        </div>
+                        <div class="form">
+                            
+                            <label for="type" class="label-name">
+                               Type
+                            </label>   
+                            <input type="text" name="type" placeholder=" "/>
+                        </div>
+                        <div class="form">
+                            <label for="year" class="label-name">
+                               Year
+                            </label>  
+                            <input type="text" name="year" placeholder=" "/>
+ 
+                        </div>
+                        <div class="form">
+                            <label for="engine" class="label-name">
+                                Engine
+                            </label>   
+                            <input type="text" name="engine" placeholder=" "/>
+                        </div>
+                        <div class="form">
+                           
+                            <label for="milage" class="label-name">
+                                Milage
+                            </label>   
+                            <input type="text" name="milage" placeholder=" "/>
+                        </div>
+                        <div class="form">
+                            
+                            <label for="fuel" class="label-name">
+                              Fuel
+                            </label>   
+                            <input type="text" name="fuel" placeholder=" "/>
+                        </div>
+                        <div class="form">
+                            
+                            <label for="transmission" class="label-name">
+                                Transmission
+                            </label> 
+                            <input type="text" name="transmission" placeholder=" "/>  
+                        </div>
+                        <div class="form">
+                            
+                            <label for="price" class="label-name">
+                               Price
+                            </label>   
+                            <input type="text" name="price" placeholder=" "/>
+                        </div>
+                        <div class="uploadImages">
+                          <input type="file" id="images" multiple accept="image/*" style="width: 200px;">
+                          <label for="images" id="imagesLabel">
+                              <i class="fas fa-upload"></i>Choose photos</label>
+                          <div id="previews"></div>
+                        </div>
+                        <button type="submit" id="add">Submit</button>
+                      </form>
+                       
+                    </div>
+                    
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            toggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            let main = document.querySelector('.main');
+            main.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+      const tabs = document.querySelectorAll('[data-tab-target]')
+      const tabContents = document.querySelectorAll('[data-tab-content]')
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+        tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
+        })
+       })
+
+    </script>
+    <script>
+        const input = document.getElementById('images');
+
+        if(input){
+            input.addEventListener('change', () => {
+                previewImages(input);
+            })
+        }
+
+        const previewImages = (input) => {
+            let counter = 0;
+            while(counter < input.files.length){
+            if(input.files && input.files[counter]){
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const imgPath = event.currentTarget.result;
+                    const previews = document.getElementById('previews');
+                    const img = `<img class = "img-preview" src = "${imgPath}">`
+                    previews.insertAdjacentHTML('beforeend', img)
+                }
+                reader.readAsDataURL(input.files[counter]);
+                counter += 1;
+            }
+            }
+        }
+    </script>
+    <script>
+      const edit = document.querySelectorAll('.fa-edit');
+      const erase = document.querySelectorAll('.fa-trash-alt');
+      var table = document.querySelector('.content-table'), rIndex;
+      var selectedRow = null;
+      var rows = document.querySelector('.content-table').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+      
+    
+        for(var i = 0; i < table.rows.length; i++)
+        {
+           try{
+              var x = rows[i].insertCell(-1);
+              x.innerHTML =
+             `<i class="fas fa-edit" id="fa-edit"></i>
+              <i class="fas fa-trash-alt" id="fa-trash-alt"></i>`;
+            }catch(e){
+              console.log(e.message)   ;
+            }
+
+                document.addEventListener('click',function(e){
+               if(e.target && e.target.id=='fa-edit'){
+                document.querySelector(".edit-form").style.display = "block";
+
+                  for (i = 0; i < rows.length; i++) {
+                    
+                    
+                  rows[i].onclick = function() {
+                    selectedRow = (this.rowIndex + 1);
+                    document.getElementById('model').value = rows[selectedRow].cells[0].innerText;
+                    document.getElementById('make').value = rows[selectedRow].cells[1].innerText;
+                    document.getElementById('type').value = rows[selectedRow].cells[2].innerText;
+                    document.getElementById('year').value = rows[selectedRow].cells[3].innerText;
+                    document.getElementById('engine').value = rows[selectedRow].cells[4].innerText;
+                    document.getElementById('milage').value = rows[selectedRow].cells[5].innerText;
+                    document.getElementById('fuel').value = rows[selectedRow].cells[6].innerText;
+                    document.getElementById('transmission').value = rows[selectedRow].cells[7].innerText;
+                    document.getElementById('price').value = rows[selectedRow].cells[8].innerText;
+                    }
+                  }
+                  }
+              });   
+        }
+      for(var i = 0; i < table.rows.length; i++){
+          document.addEventListener('click',function(e){
+            if(e.target && e.target.id=='fa-trash-alt'){
+            for (i = 0; i < rows.length; i++) {
+              rows[i].onclick = function() {
+              selectedRow = (this.rowIndex);
+              table.deleteRow(selectedRow);
+              }    
+            }
+          }
+        });
+      }
+    </script>
+</body>
