@@ -21,7 +21,6 @@ align-items: center;
 
 a{
     text-decoration: none;
-    color: #ffffff;
 }
 
 *{
@@ -42,6 +41,7 @@ nav{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    border-radius: .3rem;
 
 
     .logo{
@@ -51,6 +51,7 @@ nav{
     }
 
     div{
+        width: auto;
         margin-left: auto;
         padding: 1rem;
         button{
@@ -83,6 +84,10 @@ nav{
                     width: 20px;
                     border-radius:0;
                 }
+            }
+            a{
+                text-decoration: none;
+                color: #000000;
             }
         }
     }
@@ -219,4 +224,17 @@ nav{
       }
   }    
       
+}
+/*ABOUT PAGE*/
+
+#about{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: coral;
+    
 }

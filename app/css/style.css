@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap");
 a {
   text-decoration: none;
-  color: #ffffff;
 }
 
 * {
@@ -27,6 +26,7 @@ nav {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  border-radius: .3rem;
 }
 
 nav .logo {
@@ -36,6 +36,7 @@ nav .logo {
 }
 
 nav div {
+  width: auto;
   margin-left: auto;
   padding: 1rem;
 }
@@ -86,6 +87,11 @@ nav #navigation li span img {
   height: 20px;
   width: 20px;
   border-radius: 0;
+}
+
+nav #navigation li a {
+  text-decoration: none;
+  color: #000000;
 }
 
 #hero {
@@ -263,5 +269,16 @@ nav #navigation li span img {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+/*ABOUT PAGE*/
+#about {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/*FOOTER*/
+footer {
+  background-color: coral;
 }
 /*# sourceMappingURL=style.css.map */
