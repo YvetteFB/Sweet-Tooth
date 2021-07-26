@@ -36,27 +36,45 @@ nav{
     height: 10vh;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    background-color: #ffffff;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
 
     .logo{
         border-radius: 50%;
-        height: 100px;
-        width: 100px;
+        height: 150px;
+        width: 150px;
     }
 
     div{
         margin-left: auto;
         padding: 1rem;
+        button{
+          outline: none;
+          border: none;
+          border-radius: .5rem;
+          background: coral;
+          color: #ffffff;
+          padding: .2rem 1rem
+        }
+        :nth-child(2){
+          background-color: transparent;
+          color: black;
+          border: 1px solid coral;
+        }
     }
    
     #navigation{
         @include flex-horizontal();
-        padding: 1rem;
+        
         
         li{
             @include lists();
             @include flex-horizontal();
-            color: #ffffff;
             cursor: pointer;
             padding: 1rem;
             span{
@@ -142,18 +160,63 @@ nav{
         max-width: 100%;
         border-radius: .5em;
         max-height: 250px;
+        object-fit: cover;
       }
       
+      .product{
+        width: 200px;
+        cursor: pointer;
+        align-self: center;
+        box-shadow: 0px 0px 6px -1px #000000;
+        text-align: center;
+        padding: 1rem;
+        border-radius: .5rem;
+        transition: 250ms linear;
+        img{
+          width: 80%;
+        }
+       
+      }
+      
+
+      .products{
+        max-width: 75vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*define width*/
+        /*grid-auto-rows: 300px; define height*/
+        grid-auto-flow: dense;
+        grid-gap: 20px;
+    }
     
+    .products-container{
+      margin-top: 4em;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    /*For users who prefer not to have animations*/
+    @media (prefers-reduced-motion: reduce)
+    {
+      *,
+      *::before,
+      *::after{
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+      }
+    }
+
     
    /*media query for animation ---- if the device does not have a mouse*/
    @media (hover){
-  
-      .product:hover,
-    .product:focus-within{
-        
-    }
+   
 
+      .product:hover,
+    .product:focus-within {
+        transform: scale(1.1);
+      }
   }    
       
 }
