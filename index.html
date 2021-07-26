@@ -9,44 +9,298 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app/css/style.css">
     <script src="/dist/script.js" defer></script>
 </head>
 <body>
-    <!--------------------HERO SECTION------------------------>
-    <section id="hero">
+    <!----------------------NAV SECTION----------------------->
+    <section class="header">
         <nav>
+            <ul id="navigation">
+                
+                <li class="nav_link">Home</li>
+                <li class="nav_link">Catalogue</li>
+                <li class="nav_link">About</li>
+            </ul>
+            <span style="margin: auto;"><img src="images/logo.png" class="logo" alt=""></span>
             <div>
-                <img id="logo" src="images/logo.png" alt="">
+                <button>Login</button>
+                <button>Sign up</button>
+                <span><img src="images/shopping-cart.svg" alt="">
+                </span> 
             </div>
         </nav>
-        <div id="hero-text">
+        <!--------------------HERO SECTION------------------------>
+        <section id="hero">
+            
             <div>
-                <h1>Where flavors and people meet.</h1>
-                <h4>You dream it, we bake it.</h3>
-                <button id="shop">Shop &#x02192</button>
+                <h1 style="color: white;"> Welcome to </h1>
+               <h1> Sweet Tooth Bakery</h1>
+            <button><a href="">Order</a></button>
             </div>
+            
+        </section>
+    </section>
+    <!------------------------CATALOGUE SECTION------------------>
+    <section id="catalogue">
+        <h2>Catalogue</h2>
+        <div class="catalogue__header">
+            <select name="category" id="category__select">
+                <option value="All" selected>All Products</option>
+                <option value="Pound Cakes">Pound Cakes</option>
+                <option value="Cupcakes">Pound Cakes</option>
+                <option value="Sponge Cakes">Pound Cakes</option>
+                <option value="Cheese Cake">Pound Cakes</option>
+            </select>
+            <input type="search" name="catalogue" id="catalogue__search">
+            <div>
+                <p>Sort by</p>
+                <select name="sort" id="sort__select">
+                    <option value="price">Price</option>
+                    <option value="Cupcakes">Popularity</option>
+                </select>
+            </div>
+           
         </div>
+       
+        <section class="products-container">
+            <div class="products">
+                <a class="product" href="product.html">
+                    <div class="front">
+                        <img src="images/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg" alt="Photo by Adam Stefanca on Unsplash">
+                        <h4>Ford Mustang</h4>
+                        <p>Ksh 1,300,000</p>
+                    </div>
+                    <div class="back">
+                        <p>1998</p>
+                        <p>1500CC</p>
+                        <p>Manual</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+                <a class="product" href="">
+                    <div class="front">
+                        <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg">
+                        <h4>Simple Mocha</h4>    
+                    </div>
+                    <div class="back">
+                        <p>Kshs 1,600.00</p>
+                    </div>
+                    <div class="background"></div>
+                    
+                </a>
+            </div>
+        </section>
     </section>
-
-    <!---------------STORY----------->
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perspiciatis, possimus ea laboriosam ad minima distinctio in pariatur nulla. Vel corrupti dolorem itaque, assumenda voluptatibus aliquid repellat. Veritatis libero, culpa provident corrupti eveniet iste hic quod magnam iure, eius in id sunt maxime fugiat error molestiae laboriosam vitae blanditiis possimus et placeat! Molestias deleniti ex vitae velit dicta vero quidem veritatis, repellat distinctio. Debitis maiores saepe, est aperiam fugiat consequuntur ullam libero aliquam dolores repellat distinctio laudantium sed rerum hic recusandae nesciunt porro perferendis expedita cum maxime necessitatibus doloribus! Quidem, dolorum. Corrupti distinctio ea veniam officia, consequuntur provident quam adipisci.</p>
-    </section>
-
-    <!---------------------IMAGES AND VIDEOS------------------->
-
-    <section>
-        <div class="display">
-            <img class="horizontal" src="images/four.jpg" alt="">
-            <img class="vertical" src="images/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg" alt="">
-            <img src="images/jasmine-bartel-8LtrMQfeDkQ-unsplash.jpg" alt="">
-            <img class="big"src="images/stephen-wheeler-LRIQuZyxKRM-unsplash.jpg" alt="">
-            <img src="images/two.jpg" alt="">
-            <img src="images/one.jpg" alt="">
-            <img src="images/sj-diUixdrqh0Q-unsplash.jpg" alt="">
-        </div>
-    </section>
-
 </body>
 </html>
