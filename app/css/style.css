@@ -18,39 +18,54 @@ a {
   font-family: 'Poppins';
 }
 
+header {
+  background-color: #1d3557;
+}
+
 nav {
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 nav .logo {
   font-family: 'Pacifico', sans-serif;
-  font-size: 2rem;
-  color: #e63946;
-  width: 33.33%;
+  font-size: 1.5rem;
+  color: #E44343;
   text-align: center;
 }
 
 nav div {
-  width: 33.33%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
 }
 
 nav div button {
   outline: none;
   border: none;
   border-radius: .5rem;
-  background: #e63946;
+  background: #E44343;
   color: #ffffff;
   padding: .2rem 1rem;
+  margin-right: 1rem;
+}
+
+nav div img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 nav #navigation {
@@ -63,7 +78,6 @@ nav #navigation {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 33.33%;
 }
 
 nav #navigation li {
@@ -89,23 +103,18 @@ nav #navigation li span img {
 
 nav #navigation li a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 #hero {
   height: 100vh;
-  width: 90vw;
+  width: calc(100% - 5rem);
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -118,7 +127,7 @@ nav #navigation li a {
 
 #hero h1 {
   font-family: 'Pacifico', sans-serif;
-  color: #e63946;
+  color: #E44343;
   font-size: 3rem;
 }
 
@@ -129,40 +138,10 @@ nav #navigation li a {
 #hero button {
   border-radius: 3rem;
   color: #ffffff;
-  background-color: #e63946;
+  background-color: #E44343;
   border: none;
   outline: none;
   padding: .5rem 1.2rem;
-}
-
-#hero div {
-  color: #ffffff;
-  margin-right: auto;
-  margin-left: 20%;
-  text-align: center;
-}
-
-#hero {
-  position: relative;
-}
-
-#hero::before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-  background-image: url("https://images.unsplash.com/photo-1581022295432-7fabcc628434?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero-content {
-  position: relative;
 }
 
 #catalogue {
@@ -173,7 +152,7 @@ nav #navigation li a {
 }
 
 #catalogue hr {
-  color: #e63946;
+  color: #E44343;
 }
 
 #catalogue h2 {
@@ -197,7 +176,7 @@ nav #navigation li a {
 }
 
 #catalogue .catalogue__header select {
-  border: 1px solid #e63946;
+  border: 1px solid #E44343;
   border-radius: .2rem;
   padding: .2rem;
 }
@@ -214,14 +193,14 @@ nav #navigation li a {
 
 #catalogue img {
   max-width: 100%;
-  max-height: 250px;
+  max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 #catalogue .product {
-  width: 300px;
-  height: 350px;
+  width: 200px;
+  height: 300px;
   -webkit-box-shadow: 0px 0px 3px -1px #000000;
           box-shadow: 0px 0px 3px -1px #000000;
   border-radius: .1rem;
@@ -232,6 +211,25 @@ nav #navigation li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#catalogue .product button {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #CA3B70;
+  color: #ffffff;
+  height: 2rem;
+  margin-top: .5rem;
+}
+
+#catalogue .product button img {
+  width: 1rem;
+  height: 1rem;
+}
+
+#catalogue .product button:hover {
+  background-color: #b1305f;
 }
 
 #catalogue .product span {
@@ -254,7 +252,7 @@ nav #navigation li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 1rem;
+  margin-top: .3rem;
 }
 
 #catalogue h4 {
@@ -293,11 +291,11 @@ nav #navigation li a {
 }
 
 #catalogue .products {
-  max-width: 90vw;
+  width: calc(100% - 5rem);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   /*define width*/
   /*grid-auto-rows: 300px; define height*/
   grid-auto-flow: dense;
@@ -335,11 +333,60 @@ nav #navigation li a {
 #about {
   font-weight: 600;
   font-size: 1.2rem;
+  height: 90vh;
+}
+
+#sign {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 3rem;
+}
+
+.team {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  border: 3px solid white;
+}
+
+.team .text {
+  top: 2rem;
+  height: 300px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media all and (min-width: 900px) {
+  .team .text {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.team .text h1 {
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.team img {
+  max-width: 350px;
+}
+
+.team .team__pics {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /*FOOTER*/
 footer {
-  background-color: #e63946;
+  background-color: #E44343;
 }
 
 /*TESTIMONIALS*/

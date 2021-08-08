@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');;
 
-$base-color: #e63946;
+$base-color: #E44343;
 
 @mixin images{
     height: 100%;
@@ -35,45 +35,51 @@ a{
     font-family: 'Poppins';
 }
 
-
+header{
+    background-color: #1d3557;
+}
 nav{
     height: 10vh;
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    justify-content: space-around;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center ;
 
     .logo{
         font-family: 'Pacifico', sans-serif;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: $base-color;
-        width: 33.33%;
         text-align: center;
     }
 
     div{
-        width: 33.33%;
-        text-align: center;
         button{
           outline: none;
           border: none;
           border-radius: .5rem;
           background: $base-color;
           color: #ffffff;
-          padding: .2rem 1rem
+          padding: .2rem 1rem;
+          margin-right: 1rem;
         }
+
+        img{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        
+        @include flex-horizontal();
+        justify-content:center;
     }
    
     #navigation{
         @include flex-horizontal();
-        width: 33.33%;
         
         li{
             @include lists();
             @include flex-horizontal();
             cursor: pointer;
             padding: 1rem;
+            
             span{
                 img{
                     height: 20px;
@@ -83,16 +89,20 @@ nav{
             }
             a{
                 text-decoration: none;
-                color: #000000;
-            }
+                color: #ffffff;            }
         }
     }
 }
 
 #hero{
     height: 100vh;
-    width: 90vw;
+    width: calc(100% - 5rem);
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+   
     img{
         height: 20rem;
         width: 20rem;
@@ -113,36 +123,6 @@ nav{
         outline: none;
         padding: .5rem 1.2rem;
     }
-    @include flex-vertical();
-    div{
-        color: #ffffff;
-       margin-right: auto;
-       margin-left: 20%;
-       text-align: center;
-    }
-}
-
-#hero{
-    position: relative;
-}
-
-#hero::before{
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    background-image: url('https://images.unsplash.com/photo-1581022295432-7fabcc628434?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-content{
-    position: relative;
 }
 
 #catalogue{
@@ -175,18 +155,35 @@ nav{
     }
     img{
         max-width: 100%;
-        max-height: 250px;
+        max-height: 200px;
         object-fit: cover;
       }
       
       .product{
-        width: 300px;
-        height: 350px;
+        width: 200px;
+        height: 300px;
         box-shadow: 0px 0px 3px -1px #000000;
         border-radius: .1rem;
         display: flex;
         flex-direction: column;
 
+        button{
+            width: 100%;
+            outline: none;
+            border: none;
+            background: #CA3B70;
+            color: #ffffff;
+            height: 2rem;
+            margin-top: .5rem;
+            img{
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+
+        button:hover{
+            background-color: #b1305f;
+        }
         span{
             align-self: flex-end;
             margin-right: .5rem;
@@ -199,7 +196,7 @@ nav{
       }
       .description{
           display: flex;
-          margin-top: 1rem;
+          margin-top: .3rem;
       }
       h4{
           padding-left: .4rem;
@@ -220,9 +217,9 @@ nav{
       }
 
       .products{
-        max-width: 90vw;
+        width: calc(100% - 5rem);
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*define width*/
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*define width*/
         /*grid-auto-rows: 300px; define height*/
         grid-auto-flow: dense;
         grid-gap: 20px;
@@ -260,6 +257,45 @@ nav{
 #about{
     font-weight: 600;
     font-size: 1.2rem;
+    height: 90vh;
+}
+
+#sign{
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 3rem;
+}
+
+.team{
+    margin-top: 2rem;
+    display: grid;   
+    grid-template-columns:repeat(auto-fit, minmax(500px, 1fr));
+    border: 3px solid white;
+
+    .text{
+        @media all and (min-width: 900px){
+            position: sticky;
+        }
+        
+        top: 2rem;
+        h1{
+            font-size: 3rem;
+            font-family: 'Poppins', sans-serif;
+        }
+       height: 300px;
+       align-self:flex-start;
+    }
+
+    img{
+        max-width: 350px;
+    }
+    .team__pics{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 5px;
+        align-items: center;
+    }
+
+    
 }
 
 /*FOOTER*/
@@ -324,4 +360,3 @@ footer{
          }
     }
 }
-

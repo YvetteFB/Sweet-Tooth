@@ -7,52 +7,86 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+       
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
     body{
-        background: rgb(216, 25, 25);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items:center ;
-        height: 100vh;
         color: white;
-        
-        
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.6) 100%), url("https://images.unsplash.com/photo-1551829142-d9b8cf2c9232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80")
+        font-weight: 500;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.7) 100%), url("https://images.unsplash.com/photo-1551829142-d9b8cf2c9232?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80")
     }  
-        h1{
-            text-align: center;
-            font-family: 'Pacifico', sans-serif;
-        }
-        p{
-            width:50%;
-            margin: auto;
-        }
-    div{
-        height: 80%;
+     h1{
+        text-align: center;
+    }
+    
+    #about{
+        width: 80vw;
         display: flex;
         flex-direction: column;
+        margin: auto;
+        justify-content: center;
     }
     </style>
+
     <title>About Us</title>
 </head>
 <body>
-    <nav>
-        <span style="margin: auto;"><img src="../images/logo.png" class="logo" alt=""></span>
-
-        <ul id="navigation">
-            <li class="nav_link"> <a href="index.html">Home </a> </li>
-            <li class="nav_link"> <a href="#catalogue">Catalogue</a> </li>
-            <li class="nav_link"> <a href="about.html"> About </a></li>
-        </ul>
-        
-        <div>
-            <button>Login</button>
-        </div>
-    </nav>
+    <section class="header">
+        <nav>
+            <ul id="navigation">
+                <li class="nav_link"> <a href="index.html">Home </a> </li>
+                <li class="nav_link"> <a href="#catalogue">Catalogue</a> </li>
+                <li class="nav_link"> <a href="about.html"> About </a></li>
+            </ul>
+            <h1 class="logo">Sweet Tooth Bakery</h1>
+            <div>
+                <button>Login</button>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                     </svg>
+                </span> 
+            </div>
+        </nav>
+    </section>
     <div id="about">
-        <h1 id="about_title">About Us</h1>
-        <p id="about_txt">Sweet Tooth Bakery is a family owned business that started in 2020. Growing up, food was always a way for my family to bond. When the pandemic hit, and we were all stuck indoors, we started experimenting with cakes. It made passing the time bearable. So we decided to gift our friends and neighbours with any cakes we baked. Through many ups and downs, we were able to perfect our recipes. And the rest is history. We eventually started to sell to our cakes and we got customers through word of mouth. We appreciate everyone who had faith in us in the beginning. Today, as of August 2021, we have a staff of 5 people and are looking forward to growing. Karibu.</p>
+        <h1 id="about_title">Our Story</h1>
+        <p id="about_txt">Sweet Tooth Bakery is a family owned business that started in 2020. Growing up, food was always a way for my family to bond. When the pandemic hit, and we were all stuck indoors, we started experimenting with cakes. It made passing the time bearable. So we decided to gift our friends and neighbours with any cakes we baked. Through trial and error, we were able to perfect our recipes. And the rest is history. We eventually started to sell to our cakes and we got customers through word of mouth. We appreciate everyone who had faith in us in the beginning. Today, as of August 2021, we have a staff of 5 people and are looking forward to growing. Karibu.</p>
         <h1 id="sign">John Doe</h1>
+    </div>
+
+    <div class="team">
+        <div class="text">
+            <h1>Meet our Team</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellat accusamus qui ea veritatis a earum. Temporibus illo sequi suscipit.</p>
+        </div>
+
+        <div class="team__pics">
+            <figure>
+                <img src="../images/team1.jpg" alt="">
+                <figcaption>Marion Opala</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/team2.jpg" alt="">
+                <figcaption>Kevin Gichuhi</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/team3.jpg" alt="">
+                <figcaption>Evelyn Ndanu</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/team4.jpg" alt="">
+                <figcaption>Mercy Cheruiyot</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/team5.jpg" alt="">
+                <figcaption>Mohammed Yusuf</figcaption>
+            </figure>        
+        </div>
     </div>
 </body>
 </html>
