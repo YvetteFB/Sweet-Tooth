@@ -1,98 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');;
+@import "variables";
+@import "mixins";
+@import "animations";
 
-$base-color: #E44343;
+@import "globals";
+@import "header";
 
-@mixin images{
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-}
-@mixin lists {
-    list-style-type: none;
-}
-@mixin flex-horizontal{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-@mixin flex-vertical{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-img{
-    @include images();
-}
-a{
-    text-decoration: none;
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-}
 
-header{
-    background-color: #1d3557;
-}
-nav{
-    height: 10vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items:center ;
 
-    .logo{
-        font-family: 'Pacifico', sans-serif;
-        font-size: 1.5rem;
-        color: $base-color;
-        text-align: center;
-    }
-
-    div{
-        button{
-          outline: none;
-          border: none;
-          border-radius: .5rem;
-          background: $base-color;
-          color: #ffffff;
-          padding: .2rem 1rem;
-          margin-right: 1rem;
-        }
-
-        img{
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-        
-        @include flex-horizontal();
-        justify-content:center;
-    }
-   
-    #navigation{
-        @include flex-horizontal();
-        
-        li{
-            @include lists();
-            @include flex-horizontal();
-            cursor: pointer;
-            padding: 1rem;
-            
-            span{
-                img{
-                    height: 20px;
-                    width: 20px;
-                    border-radius:0;
-                }
-            }
-            a{
-                text-decoration: none;
-                color: #ffffff;            }
-        }
-    }
-}
 
 #hero{
     height: 100vh;
@@ -173,7 +88,7 @@ nav{
             border: none;
             background: #CA3B70;
             color: #ffffff;
-            height: 2rem;
+            height: 3.5rem;
             margin-top: .5rem;
             img{
                 width: 1rem;
