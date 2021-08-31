@@ -18,10 +18,10 @@
 <body>
     <!----------------------NAV SECTION----------------------->
     <header class="header">
-        <div class="overlay">
-            
+        <div class="overlay has-fade">
+
         </div>
-        <nav class="flex flex-jc-sb flex-ai-c">
+        <nav class="container flex flex-jc-sb flex-ai-c">
 
             <a href="/" class="header__logo flex flex-ai-c">
                 <img src="../images/logo.png" alt="">
@@ -38,28 +38,32 @@
                 <img src="../images/shopping-bag.png" alt="">
             </div>
 
-            <a href="#" id="btnHamburger" class="header__menu hide-for-desktop">
+            <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
         </nav>
-            <!--------------------HERO SECTION------------------------>
-            <section id="hero">
-
-                    <div>
-                        <h1 style="color: white;"> Welcome to </h1>
-                        <h1> Sweet Tooth Bakery</h1>
-                        <h2>A fresh experience.</h2>
-                    <button><a href="">Order</a></button>
-                    </div>
-                    <div class="hero-image">
-                        <img src="../images/ha.png" alt="">
-                    </div>
-            
-            </section>
-        </section>
+        <div class="header__menu has-fade">
+            <a href="index.html">Home</a>
+            <a href="#catalogue">Catalogue</a>
+            <a href="about.html">About</a> 
+        </div>
     </header>
+
+            <!--------------------HERO SECTION------------------------>
+    <section id="hero">
+        <div class="hero__image">
+            <img src="../images/ha.png" alt="">
+        </div>
+        <div class="hero__text">
+            <h1>Because life is Sweet</h1>
+            <button type="button">Shop</button>
+        </div>
+                   
+                    <button><a href="">Order</a></button>       
+    </section>
+    
     <!------------------------CATALOGUE SECTION------------------>
     <section id="catalogue">
         <h2>Catalogue</h2>
